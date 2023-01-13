@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row" style="visibility:hidden;">
+        <div class="col-md-5">
+            <h1 [style.color]="color" >Hello, my name is {{name}}</h1>
+            <p>I am {{age}} years old and I live in Grenoble</p>
+        </div>
+        <div class="col-md-7">
+            <button (click)="clic()" class="btn btn-danger">Ne clique surtout pas ici</button>
+        </div>
+        <div class="col-md-6">
+            <input type="text" #myname [value]="getName()" class="form-control">
+        </div>
+        <div class="col-md-6">
+            <button (click)="setName(myname.value)" class="btn btn-primary">Change name</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <label for="name">Account name</label>
+            <input type="text" [(ngModel)]=name class="form-control">
+            <select name="status" id="" [(ngModel)]=status>
+                <option value="active">active</option>
+                <option value="inactive">inactive</option>
+                <option value="unknown">unknown</option>
+            </select>
+            <button (click)="addAccount()" class="btn btn-primary">Add account</button>
+        </div>
+        <app-list-account *ngFor="let compte of tabComptes;" [tabComptes]="tabComptes"></app-list-account>
+    </div>
+</div>
